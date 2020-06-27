@@ -85,6 +85,7 @@ body {
 }
 
 .container {
+    width: 78%;
     max-width: 1130px;
     margin: auto;
 }
@@ -94,6 +95,7 @@ body {
 .film {
     padding-top: 80px;
     padding-bottom: 80px;
+    border: 1px solid #D4D4D4;
 }
 
 .film-wrapper {
@@ -241,13 +243,97 @@ body {
     margin-bottom: 7px;
 }
 
-
 .score-number, .voute-number {
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     color: #363636;
 }
+
+
+/*Actors and creators*/
+
+.actors-and-creators {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.actors-and-creators-nav {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.actors-and-creators-nav-link {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actors-and-creators-nav-link-active {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;
+    text-decoration: none;
+}
+
+#creators-button {
+    display: block;
+    margin-left: 30px;
+}
+
+.actors-and-creators-wrapper {
+    width: 100%;
+    max-width: 1130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.actors-and-creators-card {
+    width: 280px;
+    display: flex;
+}
+
+.actors-and-creators-card-photo {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#CarrieCoon .actors-and-creators-card-photo {
+    background-image: url(../img/CarrieCoon.png);
+    background-size : 100px;
+}
+
+.actors-and-creators-card-description {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-left: 20px;
+}
+
+.rus-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.eng-name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 
 
