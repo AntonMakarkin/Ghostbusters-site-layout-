@@ -95,7 +95,7 @@ body {
 .film {
     padding-top: 80px;
     padding-bottom: 80px;
-    border: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4;
 }
 
 .film-wrapper {
@@ -255,7 +255,7 @@ body {
 
 .actors-and-creators {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 68px;
 }
 
 .actors-and-creators-nav {
@@ -287,7 +287,6 @@ body {
 
 .actors-and-creators-wrapper {
     width: 100%;
-    max-width: 1130px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -296,6 +295,7 @@ body {
 .actors-and-creators-card {
     width: 280px;
     display: flex;
+    margin-bottom: 32px;
 }
 
 .actors-and-creators-card-photo {
@@ -304,11 +304,39 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+    background-size: 100px;
 }
 
-#CarrieCoon .actors-and-creators-card-photo {
+.CarrieCoon .actors-and-creators-card-photo {
     background-image: url(../img/CarrieCoon.png);
-    background-size : 100px;
+}
+
+.BillMurray .actors-and-creators-card-photo {
+    background-image: url(../img/BillMurray.png);
+}
+
+.PaulRudd .actors-and-creators-card-photo {
+    background-image: url(../img/PaulRadd.png);
+}
+
+.AnniePotts .actors-and-creators-card-photo {
+    background-image: url(../img/AnniePotts.png);
+}
+
+.MckennaGrace .actors-and-creators-card-photo {
+    background-image: url(../img/MckennaGrace.png);
+}
+
+.DanAykroyd .actors-and-creators-card-photo {
+    background-image: url(../img/Dan\ Aykroyd.png);
+}
+
+.ErnieHudson .actors-and-creators-card-photo {
+    background-image: url(../img/ErnieHudson.png);
+}
+
+.FinnWolfhard .actors-and-creators-card-photo {
+    background-image: url(../img/FinnWolfhard.png);
 }
 
 .actors-and-creators-card-description {
@@ -330,6 +358,18 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #A5A5A5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*News block*/
+
+.news {
+    padding-top: 70px;
+    background-color: #F3F3F3;
+}
+
+.news h2 {
     margin-top: 0;
     margin-bottom: 0;
 }

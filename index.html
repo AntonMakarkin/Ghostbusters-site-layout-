@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="actors-and-creators-wrapper">
-                    <div class="actors-and-creators-card" id="CarrieCoon">
+                    <div class="actors-and-creators-card CarrieCoon">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
                             <p class="rus-name">Кэрри Кун</p>
@@ -120,65 +120,80 @@
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card BillMurray">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Билл Мюррей</p>
+                            <p class="eng-name">Bill Murray</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card PaulRudd">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Пол Радд</p>
+                            <p class="eng-name">Paul Rudd</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card AnniePotts">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Энни Поттс</p>
+                            <p class="eng-name">Annie Potts</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card MckennaGrace">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">МакКенна Грейс</p>
+                            <p class="eng-name">Mckenna Grace</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card DanAykroyd">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Дэн Эйкройд</p>
+                            <p class="eng-name">Dan Aykroyd</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card ErnieHudson">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Эрни Хадсон</p>
+                            <p class="eng-name">Ernie Hudson</p>
                         </div>
                     </div>
 
-                    <div class="actors-and-creators-card">
+                    <div class="actors-and-creators-card FinnWolfhard">
                         <div class="actors-and-creators-card-photo"></div>
                         <div class="actors-and-creators-card-description">
-                            <p class="rus-name">Кэрри Кун</p>
-                            <p class="eng-name">Carrie Coon</p>
+                            <p class="rus-name">Финн Вулфард</p>
+                            <p class="eng-name">Finn Wolfhard</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="news">
+            <h2>Новости по теме</h2>
+        </section>
     </main>
 
+    <script>
+        const button = document.getElementById('actors-button');
+        const cards = document.querySelectorAll('.actors-and-creators-card');
+
+        button.addEventListener('click', function() {
+            cards.forEach(function(item) {
+                item.style.display = 'none';
+            })
+        });
+        console.log(cards);
+    </script>
 </body>
 </html>
