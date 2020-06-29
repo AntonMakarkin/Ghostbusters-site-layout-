@@ -180,20 +180,31 @@
         </section>
 
         <section class="news">
-            <h2>Новости по теме</h2>
+            <div class="container">
+                <h2>Новости по теме</h2>
+            </div>
         </section>
     </main>
 
     <script>
+
+        function fadeOutBlocks(elements) {
+                function hide(element) {
+                    element.style.display = 'none';
+                }
+                elements.forEach(function (item) {
+                    item.classList.add('fadeOut');
+                    setTimeout(hide, 1000, item);
+                });
+            };
+
         const button = document.getElementById('actors-button');
         const cards = document.querySelectorAll('.actors-and-creators-card');
 
         button.addEventListener('click', function() {
-            cards.forEach(function(item) {
-                item.style.display = 'none';
-            })
+            fadeOutBlocks(cards);
         });
-        console.log(cards);
+
     </script>
 </body>
 </html>
