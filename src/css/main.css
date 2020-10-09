@@ -337,12 +337,8 @@ div {
 }
 
 .show_mobile_menu {
-    /*padding-top: 130px;*/
     padding-top: 21%;
-    /*padding-bottom: 113px;*/
     height: 100vh;
-    /*max-height: 639px;*/
-    /*max-height: 100%;*/
 }
 
 .mobile_navigation, .mobile_login_signup {
