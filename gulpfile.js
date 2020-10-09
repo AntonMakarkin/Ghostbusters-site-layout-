@@ -131,7 +131,7 @@ gulp.task("build-prod-js", () => {
 function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
-    gulp.watch([path.watch.js], /*gulp.parallel("build-prod-js")*/);
+    gulp.watch([path.watch.js], gulp.parallel("build-prod-js"));
     gulp.watch([path.watch.img], images);
     gulp.watch([path.watch.svg], exportSVG);
 }
@@ -140,7 +140,7 @@ function clean() {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(css, html, images, exportSVG, /*"build-prod-js"*/));
+let build = gulp.series(clean, gulp.parallel(css, html, images, exportSVG, "build-prod-js"));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.exportSVG = exportSVG;
