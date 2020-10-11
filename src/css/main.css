@@ -306,6 +306,7 @@ div {
     height: 2px;
     margin-top: -5px;
     background-color: #363636;
+    transition: transform 0.2s;
 }
 
 .menu_button:after {
@@ -318,6 +319,21 @@ div {
     height: 2px;
     margin-top: 5px;
     background-color: #363636;
+    transition: transform 0.2s;
+}
+
+.menu_button_active {
+    height: 0;
+}
+
+.menu_button_active:after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+}
+
+.menu_button_active:before {
+    transform: rotate(45deg);
+    margin-top: 0;
 }
 
 .mobile_menu {

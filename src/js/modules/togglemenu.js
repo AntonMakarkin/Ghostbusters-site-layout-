@@ -6,6 +6,7 @@ const toggleMobileMenu = ({menuBtnSelector, mobileMenuSelector, mobileMenuActive
 
     
     menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu_button_active');
         mobileMenu.classList.toggle(mobileMenuActiveClass);
     });
 
